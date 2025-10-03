@@ -1,0 +1,17 @@
+# Routes dynamiques produit
+/produit/:ref /pages/produit/produit.html 200
+
+# Pages principales
+/favoris /pages/favoris/favoris.html 200
+/panier /pages/panier/panier.html 200
+/galerie /pages/galerie/galerie.html 200
+/contact /pages/contact/contact.html 200
+
+# Page d’accueil
+/ /index.html 200
+
+# Page 404
+/error.html  /error.html  404
+
+# Fallback général pour SPA (toujours en dernier)
+/* /index.html 200

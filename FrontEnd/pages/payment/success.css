@@ -1,0 +1,73 @@
+header {
+  height: 350px;
+}
+.confirmation {
+  text-align: center;
+  padding: 2rem;
+  background-color: #fce4da;
+  font-family: 'Montserrat';
+}
+
+.confirmation h1 {
+  font-size: 3rem;
+  color: #3a5151;
+  margin: 50px auto;
+}
+.confirmation p {
+  font-size: 1.5rem;
+  color: #3a5151;
+  margin-top: 20px;
+}
+
+.btn-retour {
+  display: inline-block;
+  margin: 50px auto;
+  padding: 0.75rem 1.5rem;
+  background-color: #3a5151;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  border: 1px solid #fce4da;
+  font-family: Geist;
+}
+
+.btn-retour:hover {
+  background-color: #fce4da;
+  border: 1px solid #3a5151;
+  color: #3a5151;
+}
+
+@media (max-width: 1024px) {
+  .titre-header h1 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 768px) {
+  .titre-header h1 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 550px) {
+  .titre-header h1 {
+    font-size: 22px;
+  }
+  .titre-header {
+    position: absolute;
+    top: 55%;
+    left: 60% !important;
+  }
+}
+@media (max-width: 425px) {
+  .titre-header h1 {
+    font-size: 18px;
+  }
+  .titre-header {
+    position: absolute;
+    top: 55%;
+    left: 60% !important;
+  }
+}
+@media (max-width: 320px) {
+}

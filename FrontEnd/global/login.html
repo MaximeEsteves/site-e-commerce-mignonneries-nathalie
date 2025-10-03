@@ -1,0 +1,153 @@
+<head>
+	<meta charset="UTF-8">
+	<title>Login - Mignonneries de Nathalie</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" >
+	<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+	<link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="./style.css?v=1.1.2">
+	<link rel="stylesheet" href="./login.css?v=1.1.2">
+	<script src="./login.js?v=1.1.2" type="module" defer></script>
+	<script src="./script.js?v=1.1.2" type="module" defer></script>
+  <meta name="google-site-verification" content="3OOB2G7NuhktukpiLBtx_UMw4QccqYQqU3ue6c4jxpE" />
+</head>
+<body>
+	
+<header>
+    <img src="../assets/images/image-produit-header.webp" alt="image accueil les mignonneries de nathalie">
+    <!-- NAVIGATION DESKTOP -->
+      <nav class="desktop">
+        <a href="/" id="logo-nav-header">
+          <img
+            src="../assets/images/logo-nav.webp"
+            alt="logo les mignonneries de nathalie"
+          />
+        </a>
+        <ul class="btn-nav">
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="../pages/blog/blog.html">Blog</a></li>
+          <li><a href="../pages/bio/bio.html">Contact</a></li>
+          <li>
+            <a
+              href="https://www.instagram.com/mignonneries.nathalie/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li class="favoris">
+            <a href="./pages/favoris/favoris.html">
+              <i class="fa-regular fa-heart"></i>
+              <span class="favoris-count"></span>
+            </a>
+          </li>
+          <li class="panier">
+            <a href="./pages/panier/panier.html">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span class="panier-count"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- NAVIGATION MOBILE -->
+      <nav class="mobile">
+        <!-- Burger -->
+        <button class="burger" aria-label="Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- Logo -->
+        <a href="../../index.html" class="logo">
+          <img src="../assets/images/logo-nav.webp" alt="logo" />
+        </a>
+
+        <!-- Barre de recherche -->
+        <div class="search">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Sac, Bavoir, Kit ..."
+          />
+          <div id="searchResults"></div>
+        </div>
+
+        <!-- Icônes à droite -->
+        <div class="icons">
+          <a
+            href="https://www.instagram.com/mignonneries.nathalie/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="./pages/favoris/favoris.html" class="favoris">
+            <i class="fa-regular fa-heart"></i>
+            <span class="favoris-count"></span>
+          </a>
+          <a href="./pages/panier/panier.html" class="panier">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="panier-count"></span>
+          </a>
+        </div>
+
+        <!-- Menu déroulant caché -->
+        <div class="mobile-menu">
+          <div class="mobile-menu-overlay"></div>
+          <button class="close-menu" aria-label="Fermer">
+            <i class="fa-solid fa-xmark"></i>
+            <img src="../assets/images/logo-nav.webp" alt="logo" />
+          </button>
+          <div class="icons">
+            <a
+              href="https://www.instagram.com/mignonneries.nathalie/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="./pages/favoris/favoris.html" class="favoris">
+              <i class="fa-regular fa-heart"></i>
+              <span class="favoris-count"></span>
+            </a>
+            <a href="./pages/panier/panier.html" class="panier">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span class="panier-count"></span>
+            </a>
+          </div>
+          <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="./pages/blog/blog.html">Blog</a></li>
+            <li><a href="./pages/bio/bio.html">Contact</a></li>
+          </ul>
+          <p>© 2024 - 2025 Mignonneries-Nathalie</p>
+        </div>
+      </nav>
+</header>
+<main>
+    <section id="menu-login" class="zone-connexion">
+		<h2>Log in</h2>
+		<form action="#" method="post" id="menu-connexion">
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email">
+			<label for="password">Mot de passe</label>
+			<input name="password" type="password" id="password" cols="30" rows="10">
+			<input type="submit" value="Valider" class="btn-connexion">
+		</form>
+        <p class="text-error-connexion"></p>
+	</section>
+</main>
+
+<footer>
+	<nav>
+		<ul>
+			<li> <a href="../pages/footer/cgv.html">Mentions Légales</a></li>
+		</ul>
+	</nav>
+</footer>
+</body>
+</html>

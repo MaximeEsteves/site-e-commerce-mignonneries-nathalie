@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mignonneries de Nathalie - Accessoires mode artisanale</title>
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon" />
+    <!-- Open Graph -->
+    <meta property="og:type" content="product" />
+    <meta
+      property="og:title"
+      content="Nom du produit – Mignonneries de Nathalie"
+    />
+    <meta property="og:description" content="Description courte du produit" />
+    <meta
+      property="og:image"
+      content="https://mignonneries-nathalie.fr/assets/icons/logo.webp"
+    />
+    <meta
+      property="og:url"
+      content="https://mignonneries-nathalie.fr//produit.html?ref=LA-REF"
+    />
+    <meta property="og:site_name" content="Mignonneries de Nathalie" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Nom du produit – Mignonneries de Nathalie"
+    />
+    <meta name="twitter:description" content="Description courte du produit" />
+    <meta
+      name="twitter:image"
+      content="https://mignonneries-nathalie.fr/assets/icons/logo.webp"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <meta
+      name="description"
+      content="Conditions générales de vente - Mignonneries de Nathalie"
+    />
+    <link rel="stylesheet" href="../../global/style.css?v=1.1.2" />
+    <link rel="stylesheet" href="./cgv.css?v=1.1.2" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!-- Script Leaflet -->
+    <script type="module" src="../../global/script.js?v=1.1.2" defer></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js?v=1.1.2"></script>
+    <meta
+      name="google-site-verification"
+      content="3OOB2G7NuhktukpiLBtx_UMw4QccqYQqU3ue6c4jxpE"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- NAVIGATION DESKTOP -->
+      <nav class="desktop">
+        <a href="../../index.html" id="logo-nav-header"
+          ><img
+            src="../../assets/images/logo-nav.webp"
+            alt="logo les mignonneries de nathalie"
+        /></a>
+        <ul class="btn-nav">
+          <li><a href="../../index.html">Accueil</a></li>
+          <li><a href="../../index.html#creation">Créations</a></li>
+          <li><a href="../blog/blog.html">Blog</a></li>
+          <li><a href="../../index.html#contact">Contact</a></li>
+          <li>
+            <a
+              href="https://www.instagram.com/mignonneries.nathalie/"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li class="favoris">
+            <a href="../favoris/favoris.html"
+              ><i class="fa-regular fa-heart"></i
+              ><span class="favoris-count"></span
+            ></a>
+          </li>
+          <li class="panier">
+            <a href="../panier/panier.html"
+              ><i class="fa-solid fa-bag-shopping"></i
+              ><span class="panier-count"></span
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <!-- NAVIGATION MOBILE -->
+      <nav class="mobile">
+        <!-- Burger -->
+        <button class="burger" aria-label="Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- Logo -->
+        <a href="../../index.html" class="logo">
+          <img src="../../assets/images/logo-nav.webp" alt="logo" />
+        </a>
+
+        <!-- Barre de recherche -->
+        <div class="search">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Sac, Bavoir, Kit ..."
+          />
+          <div id="searchResults"></div>
+        </div>
+
+        <!-- Icônes à droite -->
+        <div class="icons">
+          <a
+            href="https://www.instagram.com/mignonneries.nathalie/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="./pages/favoris/favoris.html" class="favoris">
+            <i class="fa-regular fa-heart"></i>
+            <span class="favoris-count"></span>
+          </a>
+          <a href="./pages/panier/panier.html" class="panier">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="panier-count"></span>
+          </a>
+        </div>
+
+        <!-- Menu déroulant caché -->
+        <div class="mobile-menu">
+          <div class="mobile-menu-overlay"></div>
+          <div class="close-menu-container">
+            <button class="close-menu" aria-label="Fermer">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <img src="../../assets/images/logo-nav.webp" alt="logo" />
+          </div>
+          <div class="icons">
+            <a
+              href="https://www.instagram.com/mignonneries.nathalie/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="./pages/favoris/favoris.html" class="favoris">
+              <i class="fa-regular fa-heart"></i>
+              <span class="favoris-count"></span>
+            </a>
+            <a href="./pages/panier/panier.html" class="panier">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span class="panier-count"></span>
+            </a>
+          </div>
+          <ul>
+            <li><a href="../../index.html">Accueil</a></li>
+            <li><a href="../../index.html#creation">Créations</a></li>
+            <li><a href="../blog/blog.html">Blog</a></li>
+            <li><a href="../../index.html#contact">Contact</a></li>
+          </ul>
+          <p>© 2024 - 2025 Mignonneries-Nathalie</p>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="cgv-intro">
+        <h1>Conditions Générales de Vente et Politique de Confidentialité</h1>
+        <div>
+          <ul>
+            <li class="titre-regle">
+              Règle n°1 : Objet et champ d'application
+            </li>
+            <li>
+              Les présentes conditions générales de vente (CGV) constituent le
+              socle de la négociation commerciale et sont systématiquement
+              adressées ou remises à chaque acheteur pour lui permettre de
+              passer commande. Elles détaillent les droits et obligations de la
+              société Les Mignonneries de Nathalie et de son client dans le
+              cadre de la vente spécialisée de design d'articles et
+              d'accessoires de mode. Toute prestation accomplie par la société
+              Les Mignonneries de Nathalie implique l'adhésion sans réserve de
+              l'acheteur aux présentes CGV.
+            </li>
+
+            <li class="titre-regle">Règle n°2 : Prix</li>
+            <li>
+              Les prix des articles vendus sont ceux en vigueur le jour de la
+              prise de commande. Ils sont libellés en euros et calculés TTC. Les
+              frais de transport sont indiqués au moment de la commande ou
+              offerts selon les promotions en cours.
+            </li>
+
+            <li class="titre-regle">Règle n°3 : Modalités de paiement</li>
+            <li>
+              Le règlement s'effectue par carte bancaire au moment de la
+              commande pour validation de celle-ci.
+            </li>
+
+            <li class="titre-regle">Règle n°4 : Réservation</li>
+            <li>
+              Aucune réservation via le site internet ne pourra être faite sans
+              paiement.
+            </li>
+
+            <li class="titre-regle">Règle n°5 : Livraison</li>
+            <li>
+              La livraison s'effectue uniquement par envoi postal via La Poste.
+              La remise des produits au transporteur se fait dans les 24 à 48
+              heures suivant la validation de la commande. Le délai de livraison
+              est de 2 à 5 jours pour un envoi en France.
+            </li>
+
+            <li class="titre-regle">Règle n°6 : Retours et Remboursement</li>
+            <li>
+              Les retours sont acceptés uniquement si l'article n'a ni été porté
+              ni endommagé et qu'il est renvoyé dans son emballage d'origine.
+              Vous disposez de 14 jours après réception pour faire une demande
+              de retour. Le retour est gratuit. Après vérification, le
+              remboursement sera effectué sur le compte ayant servi au paiement.
+              Pour toute question, veuillez consulter la rubrique "Contact".
+            </li>
+
+            <li class="titre-regle" id="politique-confidentialite">
+              Politique de confidentialité et protection des données
+              personnelles
+            </li>
+            <li>
+              Conformément au Règlement Général sur la Protection des Données
+              (RGPD) et à la loi "Informatique et Libertés", Les Mignonneries de
+              Nathalie s'engage à protéger vos données personnelles.
+            </li>
+            <li>
+              Les informations collectées lors d'une commande (nom, prénom,
+              adresse postale, code postal, téléphone, e-mail) sont nécessaires
+              au traitement et à l'expédition de votre commande. Elles sont
+              stockées de manière sécurisée dans notre base de données et
+              utilisées uniquement pour l'exécution de la commande.
+            </li>
+            <li>
+              Les données relatives à votre navigation (panier, favoris) sont
+              stockées localement sur votre appareil via le localStorage et sont
+              supprimées lorsque vous validez votre commande ou supprimez vos
+              articles.
+            </li>
+            <li>
+              Nous ne partageons jamais vos données personnelles à des fins
+              commerciales. Elles ne sont transmises qu’aux prestataires
+              indispensables à la bonne exécution de la commande.
+            </li>
+            <li>
+              Les cookies utilisés par le site sont strictement nécessaires au
+              fonctionnement (sécurité et performance). Aucun cookie de suivi
+              publicitaire ou analytique n’est déposé sans votre consentement
+              explicite via le bandeau RGPD.
+            </li>
+            <li>
+              Vos données sont conservées pendant la durée nécessaire au
+              traitement de votre commande et peuvent être archivées pour
+              répondre aux obligations légales et comptables.
+            </li>
+            <li>
+              Vous disposez d’un droit d’accès, de rectification, d’opposition
+              et de suppression des données vous concernant. Pour l’exercer,
+              contactez-nous à : lesmidena@gmail.com
+            </li>
+
+            <li class="titre-regle" id="mentions-legales">Mentions Légales</li>
+            <li>Nom du site : www.mignonneries-nathalie.fr</li>
+            <li>Directeur de la publication : Mme Nathalie Esteves</li>
+            <li>Email : lesmidena@gmail.com</li>
+            <li>Adresse : 81200 - Mazamet</li>
+            <li>Forme juridique : Entrepreneur Individuel</li>
+            <li>Raison sociale : Les Mignonneries de Nathalie</li>
+            <li>SIRET : 94768358700010</li>
+            <li>Capital : 100,00 €</li>
+            <li>TVA Intracommunautaire : FR76947683587</li>
+            <li>
+              L'utilisateur reconnaît disposer de la compétence et des moyens
+              nécessaires pour accéder et utiliser ce site et s'engage à
+              respecter les présentes mentions légales.
+            </li>
+            <li>
+              Toute reproduction partielle ou totale de ce site ou de ses bases
+              de données sans autorisation est interdite et constitue une
+              contrefaçon, sanctionnée par les articles L335-2 et suivants du
+              Code de la Propriété Intellectuelle.
+            </li>
+            <li>
+              Les marques et logos présents sur le site sont protégés et ne
+              peuvent être reproduits sans l'autorisation du Directeur de la
+              publication.
+            </li>
+            <li>
+              Les liens hypertextes vers d'autres sites doivent faire l’objet
+              d’une autorisation préalable.
+            </li>
+            <li>
+              En cas de litige, vous pouvez recourir gratuitement au Médiateur
+              de la Consommation :
+              <a
+                href="http://www.economie.gouv.fr/mediation-conso"
+                target="_blank"
+                >http://www.economie.gouv.fr/mediation-conso</a
+              >.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="div-footer">
+        <h3 class="titre-footer">À propos</h3>
+        <ul class="lien-footer">
+          <li><a href="./cgv.html#mentions-legales">Mentions légales</a></li>
+          <li><a href="./cgv.html">Conditions générales </a></li>
+          <li><a href="../bio/bio.html">À propos</a></li>
+        </ul>
+      </div>
+      <div class="div-footer">
+        <p>© 2024 - 2025 Mignonneries-Nathalie</p>
+        <ul class="lien-footer-reseaux">
+          <li>
+            <a
+              href="https://www.instagram.com/mignonneries.nathalie/"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.tiktok.com/@les_mignonneries_de_nath"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/mignonneries-de-nathalie-499884334/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UCEfuaMURKRQH5zqfeSbv1RQ"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://fr.pinterest.com/lesmidena/"
+              ><i class="fa-brands fa-pinterest"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="div-footer">
+        <h3 class="titre-footer">Assistance</h3>
+        <ul class="lien-footer">
+          <li><a href="../bio/bio.html">Nous contacter</a></li>
+          <li>
+            <a href="https://g.page/r/CRnYaYW2yYMWEBM/review" target="_blank"
+              >Avis google</a
+            >
+          </li>
+          <li><a href="./tissus.html">Les tissus</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script>
+      fetch('/cookie-banner.html')
+        .then((response) => response.text())
+        .then((data) => {
+          const div = document.createElement('div');
+          div.innerHTML = data;
+          document.body.appendChild(div);
+
+          const banner = document.getElementById('cookie-banner');
+          const consent = localStorage.getItem('cookiesConsent');
+
+          function showBanner() {
+            banner.classList.add('show');
+          }
+          function hideBanner() {
+            banner.classList.remove('show');
+            setTimeout(() => (banner.style.display = 'none'), 600);
+          }
+
+          if (!consent) setTimeout(showBanner, 500);
+          else {
+            banner.style.display = 'none';
+            if (consent === 'accepted') enableOptionalCookies();
+          }
+
+          document
+            .getElementById('accept-cookies')
+            .addEventListener('click', () => {
+              localStorage.setItem('cookiesConsent', 'accepted');
+              hideBanner();
+              enableOptionalCookies();
+            });
+
+          document
+            .getElementById('reject-cookies')
+            .addEventListener('click', () => {
+              localStorage.setItem('cookiesConsent', 'rejected');
+              hideBanner();
+            });
+
+          function enableOptionalCookies() {
+            if (!window.gaScriptLoaded) {
+              let gaScript = document.createElement('script');
+              gaScript.src =
+                'https://www.googletagmanager.com/gtag/js?id=G-GMKB3EETR0'; // Remplace par ton ID
+              gaScript.async = true;
+              document.head.appendChild(gaScript);
+
+              window.dataLayer = window.dataLayer || [];
+              function gtag() {
+                dataLayer.push(arguments);
+              }
+              window.gtag = gtag;
+              gtag('js', new Date());
+              gtag('config', 'G-GMKB3EETR0'); // Remplace par ton ID
+              window.gaScriptLoaded = true;
+            }
+          }
+        })
+        .catch((err) =>
+          console.error('Erreur chargement bandeau cookies:', err)
+        );
+    </script>
+  </body>
+</html>

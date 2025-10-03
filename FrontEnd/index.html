@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mignonneries de Nathalie - Accessoires mode artisanale</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+
+    <!-- Description pour les moteurs de recherche -->
+    <meta
+      name="description"
+      content="Boutique artisanale à Mazamet (Tarn) — accessoires faits main : sacs, trousses, lingettes réutilisables et autres créations uniques"
+    />
+
+    <!-- Open Graph pour Facebook, LinkedIn, etc. -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Mignonneries de Nathalie - Accessoires mode artisanale"
+    />
+    <meta
+      property="og:description"
+      content="Boutique artisanale à Mazamet (Tarn) — accessoires faits main : sacs, trousses, lingettes réutilisables et autres créations uniques"
+    />
+    <meta
+      property="og:image"
+      content="https://mignonneries-nathalie.fr/favicon.ico"
+    />
+    <meta property="og:url" content="https://mignonneries-nathalie.fr/" />
+    <meta property="og:site_name" content="Mignonneries de Nathalie" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Mignonneries de Nathalie - Accessoires mode artisanale"
+    />
+    <meta
+      name="twitter:description"
+      content="Boutique artisanale à Mazamet (Tarn) — accessoires faits main : sacs, trousses, lingettes réutilisables et autres créations uniques"
+    />
+    <meta
+      name="twitter:image"
+      content="https://mignonneries-nathalie.fr/assets/icons/logo.webp"
+    />
+
+    <!-- Fonts & Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.quilljs.com/1.3.6/quill.snow.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.css"
+    />
+
+    <!-- JS (UMD global) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.js"></script>
+
+    <!-- Styles locaux -->
+    <link rel="stylesheet" href="./index.css?v=1.1.2" />
+    <link rel="stylesheet" href="./modal.css?v=1.1.2" />
+    <link rel="stylesheet" href="./global/style.css?v=1.1.2" />
+
+    <!-- Scripts -->
+    <script type="module" src="./global/script.js?v=1.1.2" defer></script>
+    <script type="module" src="index.js?v=1.1.2" defer></script>
+    <script type="module" src="./global/login.js?v=1.1.2" defer></script>
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <meta
+      name="google-site-verification"
+      content="3OOB2G7NuhktukpiLBtx_UMw4QccqYQqU3ue6c4jxpE"
+    />
+  </head>
+
+  <body id="btn-retour" aria-label="Retour à l'accueil">
+    <header>
+      <img
+        src="./assets/images/image-accueil.webp"
+        alt="image accueil les mignonneries de nathalie"
+      />
+      <div class="titre-header">
+        <h1>
+          Les mignonneries de <br />
+          <span>Nathalie</span>
+        </h1>
+        <p>
+          Les petites choses du quotidien <br />
+          cousues main pour petits et grands
+        </p>
+      </div>
+      <!-- NAVIGATION DESKTOP -->
+      <nav class="desktop">
+        <a href="/" id="logo-nav-header">
+          <img
+            src="./assets/images/logo-nav.webp"
+            alt="logo les mignonneries de nathalie"
+          />
+        </a>
+        <ul class="btn-nav">
+          <li><a href="#btn-retour">Accueil</a></li>
+          <li><a href="#creation">Créations</a></li>
+          <li><a href="./pages/blog/blog.html">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a
+              href="https://www.instagram.com/mignonneries.nathalie/"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li class="favoris">
+            <a href="./pages/favoris/favoris.html" aria-label="Favoris">
+              <i class="fa-regular fa-heart"></i>
+              <span class="favoris-count"></span>
+            </a>
+          </li>
+          <li class="panier">
+            <a href="./pages/panier/panier.html" aria-label="Panier">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span class="panier-count"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- NAVIGATION MOBILE -->
+      <nav class="mobile">
+        <!-- Burger -->
+        <button class="burger" aria-label="Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+          <img src="./assets/images/logo-nav.webp" alt="logo" />
+        </a>
+
+        <!-- Barre de recherche -->
+        <div class="search">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Sac, Bavoir, Kit ..."
+          />
+          <div id="searchResults"></div>
+        </div>
+
+        <!-- Icônes à droite -->
+        <div class="icons">
+          <a
+            href="https://www.instagram.com/mignonneries.nathalie/"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="./pages/favoris/favoris.html"
+            class="favoris"
+            aria-label="Favoris"
+          >
+            <i class="fa-regular fa-heart"></i>
+            <span class="favoris-count"></span>
+          </a>
+          <a
+            href="./pages/panier/panier.html"
+            class="panier"
+            aria-label="Panier"
+          >
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="panier-count"></span>
+          </a>
+        </div>
+
+        <!-- Menu déroulant caché -->
+        <div class="mobile-menu">
+          <div class="mobile-menu-overlay"></div>
+          <div class="close-menu-container">
+            <button class="close-menu" aria-label="Fermer">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <img src="./assets/images/logo-nav.webp" alt="logo" />
+          </div>
+          <div class="icons">
+            <a
+              href="https://www.instagram.com/mignonneries.nathalie/"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="./pages/favoris/favoris.html"
+              class="favoris"
+              aria-label="Favoris"
+            >
+              <i class="fa-regular fa-heart"></i>
+              <span class="favoris-count"></span>
+            </a>
+            <a
+              href="./pages/panier/panier.html"
+              class="panier"
+              aria-label="Panier"
+            >
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span class="panier-count"></span>
+            </a>
+          </div>
+          <ul>
+            <li><a href="#btn-retour">Accueil</a></li>
+            <li><a href="./pages/blog/blog.html">Blog</a></li>
+            <li><a href="./pages/bio/bio.html">Contact</a></li>
+          </ul>
+          <p>© 2024 - 2025 Mignonneries-Nathalie</p>
+        </div>
+      </nav>
+    </header>
+    <a href="#base-content" aria-label="Scroll down"
+      ><i class="fa-solid fa-chevron-down"></i
+    ></a>
+    <main>
+      <div class="btn-retour-hp">
+        <button>
+          <a href="#btn-retour" aria-label="Scroll to top"
+            ><i class="fa-solid fa-chevron-up"></i
+          ></a>
+        </button>
+      </div>
+      <div id="base-content">
+        <section class="introduction">
+          <article>
+            <h2>Les mignonneries de Nathalie</h2>
+            <p>
+              Découvrez une sélection unique d'accessoires faits main qui
+              apporteront une note de douceur et d'originalité à votre
+              quotidien.
+            </p>
+            <p>
+              Parcourez ma boutique en ligne ou rendez-vous directement en
+              magasin, à la jardinerie Couleurs Jardin à Mazamet (81).
+            </p>
+          </article>
+          <div class="presentation-une">
+            <div class="presentation-une-image">
+              <img
+                src="./assets/images/sac-presentation.webp"
+                alt="Image de la mignonnerie du moment - Sac Cabas"
+              />
+            </div>
+            <div class="presentation-une-texte">
+              <div class="section-principale-titre-texte">
+                <div class="section-secondaire-titre-texte">
+                  <p class="line-gauche"></p>
+                  <h3>La mignonnerie du moment</h3>
+                  <p class="line-droite"></p>
+                </div>
+                <img src="./assets/icons/icon_etoile.svg" alt="étoile" />
+              </div>
+              <h4 class="presentation-une-texte-prix">
+                Le Sac Cabas<span>29.99€</span>
+              </h4>
+
+              <p>
+                Le Sac Cabas rayé d’assez grande capacité. Confectionné avec un
+                tissu épais en coton marinière résistant pour l'extérieur et du
+                lin pour l'intérieur. <br /><br />Forme carrée : environ 28 cm
+                de côté <br />Poche intérieure : Longueur : environ 18 cm
+                <br />Hauteur : environ 18,5 cm <br />Lavable en machine à 30°
+                <br /><br />
+                Ajoutez une touche de mignonnerie à votre garde-robe dès
+                maintenant !
+              </p>
+              <button id="creation" aria-label="Découvrir le produit">
+                <a href="produit/A47861">Découvrir</a>
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="article-boutique">
+          <div class="section-principale-titre-texte-bis">
+            <div class="section-secondaire-titre-texte-bis">
+              <p class="line-gauche-bis"></p>
+              <h3>Les Mignonneries de Nathalie</h3>
+              <p class="line-droite-bis"></p>
+            </div>
+            <img src="./assets/icons/icon_etoile.svg" alt="étoile" />
+          </div>
+          <div class="titre-projet"></div>
+          <div class="zone-btn"></div>
+          <div id="portfolio"></div>
+        </section>
+        <section class="en-savoir-plus">
+          <div class="en-savoir-plus-texte">
+            <h3>Les petites mains derrière les Mignonneries</h3>
+            <p>
+              C'est à la suite de la période Covid que j'ai pris le temps de
+              renouer avec ma créativité en m'essayant à la couture. Depuis, je
+              ne me suis plus jamais arrêtée...
+            </p>
+            <button>
+              <a href="./pages/bio/bio.html" aria-label="En savoir plus"
+                >En savoir plus</a
+              >
+            </button>
+          </div>
+          <div class="en-savoir-plus-image">
+            <img
+              src="./assets/images/image-couture.webp"
+              alt="image de Nathalie qui coud"
+            />
+          </div>
+        </section>
+        <section class="section-information">
+          <div class="div-information">
+            <article>
+              <div class="produit-similaire">
+                <img
+                  src="./assets/icons/icon_aiguille.svg"
+                  alt="Image création artisanale"
+                />
+                <h4>Création artisanale</h4>
+                <p>
+                  Toutes nos créations sont réalisées à la main avec passion
+                  dans notre atelier dans le Tarn (81).
+                </p>
+              </div>
+            </article>
+            <article>
+              <div class="produit-similaire">
+                <img
+                  src="./assets/icons/icon_cartes.svg"
+                  alt="Image écoresponsable"
+                />
+                <h4>Écoresponsable</h4>
+                <p>
+                  Nos produits sont réutilisables et fabriqués, pour la plupart,
+                  avec des matériaux de seconde main.
+                </p>
+              </div>
+            </article>
+            <article>
+              <div class="produit-similaire">
+                <img
+                  src="./assets/icons/icon_boite.svg"
+                  alt="Image livraison rapide"
+                />
+                <h4>Livraison rapide</h4>
+                <p>
+                  Nos produits sont emballés par nos soins et envoyés dans les
+                  plus brefs délais.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="encore-plus">
+          <div class="encore-plus-texte">
+            <h3>Encore plus <br />de mignonneries !</h3>
+            <p>
+              Retrouvez encore plus de mignonneries sur mes différents réseaux !
+            </p>
+            <ul>
+              <li>
+                <a
+                  href="https://www.instagram.com/mignonneries.nathalie/"
+                  target="_blank"
+                  aria-label="Instagram"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.tiktok.com/@les_mignonneries_de_nath"
+                  target="_blank"
+                  aria-label="TikTok"
+                  ><i class="fa-brands fa-tiktok"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/mignonneries-de-nathalie-499884334/"
+                  target="_blank"
+                  aria-label="LinkedIn"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/channel/UCEfuaMURKRQH5zqfeSbv1RQ"
+                  target="_blank"
+                  aria-label="YouTube"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://fr.pinterest.com/lesmidena/"
+                  target="_blank"
+                  aria-label="Pinterest"
+                  ><i class="fa-brands fa-pinterest"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <img
+            src="./assets/images/trousse-soins.webp"
+            alt="image d'une trousse de soins les mignonneries de nathalie"
+          />
+          <img
+            src="./assets/images/lingettes-démaquillante.webp"
+            alt="image de kit de lingettes-démaquillante réutilisables les mignonneries de nathalie"
+          />
+          <img
+            src="./assets/images/trousse.webp"
+            alt="image d'une trousse les mignonneries de nathalie"
+          />
+          <img
+            src="./assets/images/pochette.webp"
+            alt="image d'une pochette les mignonneries de nathalie"
+          />
+          <img
+            src="./assets/images/cache-pot.webp"
+            alt="image d'un cache pot en lin les mignonneries de nathalie"
+          />
+        </section>
+        <section id="contact">
+          <h3>Contact</h3>
+          <p>Une question ? Un projet sur mesure ?</p>
+          <p>
+            Vous avez une envie particulière, une demande personnalisée ou
+            simplement une question ? <br />
+            Je propose aussi des créations à la demande : choix de tissus plus
+            large, adaptation d'un modèle ou pièce unique.
+          </p>
+          <p>N’hésitez pas à me contacter !</p>
+          <form action="#" method="post">
+            <label for="name-contact"
+              >Nom <span style="color: red">*</span></label
+            >
+            <input
+              type="text"
+              name="name"
+              id="name-contact"
+              required
+              placeholder="Votre nom"
+            />
+            <label for="email-contact"
+              >Email <span style="color: red">*</span></label
+            >
+            <input
+              type="email"
+              name="email"
+              id="email-contact"
+              required
+              placeholder="contact@example.com"
+            />
+            <label for="message-contact"
+              >Message <span style="color: red">*</span></label
+            >
+            <textarea
+              name="message"
+              id="message-contact"
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+            <input
+              type="submit"
+              value="Envoyer"
+              class="btn-contact"
+              aria-label="Envoyer le formulaire"
+            />
+            <span
+              style="margin-bottom: 40px; font-size: 14px; font-style: italic"
+              ><span style="color: red">*</span> Champs obligatoires</span
+            >
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="div-footer">
+        <h3 class="titre-footer">À propos</h3>
+        <ul class="lien-footer">
+          <li>
+            <a href="./pages/footer/cgv.html#mentions-legales"
+              >Mentions légales</a
+            >
+          </li>
+          <li><a href="./pages/footer/cgv.html">Conditions générales </a></li>
+          <li><a href="./pages/bio/bio.html">À propos</a></li>
+        </ul>
+      </div>
+      <div class="div-footer">
+        <p>© 2024 - 2025 Mignonneries-Nathalie</p>
+        <ul class="lien-footer-reseaux">
+          <li>
+            <a
+              href="https://www.instagram.com/mignonneries.nathalie/"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.tiktok.com/@les_mignonneries_de_nath"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/mignonneries-de-nathalie-499884334/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UCEfuaMURKRQH5zqfeSbv1RQ"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://fr.pinterest.com/lesmidena/"
+              ><i class="fa-brands fa-pinterest"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="div-footer">
+        <h3 class="titre-footer">Assistance</h3>
+        <ul class="lien-footer">
+          <li><a href="./pages/bio/bio.html">Nous contacter</a></li>
+          <li>
+            <a href="https://g.page/r/CRnYaYW2yYMWEBM/review" target="_blank"
+              >Avis google</a
+            >
+          </li>
+          <li><a href="./pages/footer/tissus.html">Les tissus</a></li>
+          <li class="user-open"><a href="./global/login.html">Login</a></li>
+        </ul>
+      </div>
+    </footer>
+    <div class="modal-content">
+      <div class="modal">
+        <button class="btn-close">
+          <i class="fa-solid fa-xmark fa-2xl"></i>
+        </button>
+        <h2 class="titre-modal"></h2>
+        <form id="product-form" enctype="multipart/form-data">
+          <!-- Tes inputs "categorie", "imageCouverture", "images"… -->
+          <div class="formulaire-modification-primaire">
+            <!-- Les autres champs -->
+            <label>Catégorie</label
+            ><input
+              type="text"
+              name="categorie"
+              required
+              placeholder="Bavoir bandana"
+            />
+            <label>Nom</label
+            ><input type="text" name="nom" required placeholder="Vert clair" />
+            <label>Titre de description</label
+            ><input
+              type="text"
+              name="titreDescription"
+              required
+              placeholder="Bavoir bandana - L'accessoire indispensable pou..."
+            />
+            <label>Description courte</label
+            ><input
+              type="text"
+              name="description"
+              required
+              placeholder="Ce bavoir bandana accompagne bébé du mat..."
+            />
+            <label>reference</label
+            ><input
+              type="text"
+              name="reference"
+              required
+              placeholder="A27442"
+            />
+            <label>prix</label
+            ><input
+              type="number"
+              name="prix"
+              step="0.01"
+              required
+              placeholder="19.99"
+            />
+            <label>materiaux</label
+            ><input
+              type="text"
+              name="materiaux"
+              required
+              placeholder="Coton bio"
+            />
+            <label>stock</label
+            ><input
+              type="number"
+              name="stock"
+              min="0"
+              required
+              placeholder="0"
+            />
+            <button type="submit" id="btn-submit"></button>
+          </div>
+          <div class="formulaire-modification-secondaire">
+            <!-- Conteneurs Quill -->
+            <label>Description complète</label>
+            <div id="editor-descriptionComplete" class="quill-editor"></div>
+            <input
+              type="hidden"
+              name="descriptionComplete"
+              id="input-descriptionComplete"
+              required
+            />
+          </div>
+
+          <!-- Ajout image de couverture -->
+          <div class="add-photo-section">
+            <div
+              class="custom-file-upload"
+              onclick="document.getElementById('file-upload-couverture').click()"
+            >
+              <input
+                type="file"
+                id="file-upload-couverture"
+                name="imageCouverture"
+                accept="image/jpeg,image/png,image/webp"
+              />
+              <span class="btn-text">Modifier photo couverture</span>
+              <span class="file-info"></span>
+              <span class="text-error-add-photo"></span>
+            </div>
+            <img id="preview-couverture" />
+            <div
+              class="custom-file-upload"
+              onclick="document.getElementById('file-upload-images').click()"
+            >
+              <input
+                type="file"
+                id="file-upload-images"
+                name="image"
+                accept="image/jpeg,image/png,image/webp"
+                multiple
+              />
+              <span class="btn-text">Ajouter photos produit</span>
+              <span class="file-info"></span>
+              <span class="text-error-add-photo"></span>
+            </div>
+            <div id="preview-multi-images" class="image-preview-gallery"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="modal-content-avis">
+      <div class="modal-avis">
+        <button class="btn-close">
+          <i class="fa-solid fa-xmark fa-2xl"></i>
+        </button>
+        <h1>Administration des avis</h1>
+        <h2>Liste des avis</h2>
+        <div id="table-container"></div>
+      </div>
+    </div>
+    <div id="cropper-modal">
+      <div class="cropper-modal-inner">
+        <div class="cropper-container-wrapper">
+          <img id="cropper-image" src="" alt="Edit image" />
+        </div>
+        <div class="cropper-buttons">
+          <button id="cropper-apply">Appliquer</button>
+          <button id="cropper-cancel">Annuler</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal-content-gestion">
+      <div class="modal-gestion">
+        <button class="btn-close">
+          <i class="fa-solid fa-xmark fa-2xl"></i>
+        </button>
+        <button class="modal-gestion-ajout-article">Ajouter un article</button>
+        <div class="modal-gestion-periode">
+          <select name="gestion" id="select-gestion-annee"></select>
+          <select name="gestion" id="select-gestion-mois"></select>
+        </div>
+        <div class="modal-gestion-centrale">
+          <div class="modal-gestion-filtres">
+            <table class="modal-gestion-table">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Article</th>
+                  <th>Référence</th>
+                  <th>Quantités</th>
+                  <th>Revenu</th>
+                  <th>Internet</th>
+                  <th>Magasin</th>
+                </tr>
+              </thead>
+              <tbody class="gestion-table"></tbody>
+            </table>
+          </div>
+          <div class="modal-gestion-charges">
+            <div class="modal-gestion-charges-secondaire">
+              <p>Charges</p>
+              <ul>
+                <li>URSAFF <span>0.128</span></li>
+                <li>MOLLIE<span>0.012</span></li>
+              </ul>
+            </div>
+            <div class="modal-gestion-charges-mensuel">
+              <table class="modal-gestion-charges-mensuel-table">
+                <thead>
+                  <tr>
+                    <th>2025</th>
+                    <th>Total en €</th>
+                    <th>QTE vendu</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Janvier</td>
+                    <td class="revenu-janvier"></td>
+                    <td class="qte-vente-janvier"></td>
+                  </tr>
+                  <tr>
+                    <td>Février</td>
+                    <td class="revenu-fevrier"></td>
+                    <td class="qte-vente-fevrier"></td>
+                  </tr>
+                  <tr>
+                    <td>Mars</td>
+                    <td class="revenu-mars"></td>
+                    <td class="qte-vente-mars"></td>
+                  </tr>
+                  <tr>
+                    <td>Avril</td>
+                    <td class="revenu-avril"></td>
+                    <td class="qte-vente-avril"></td>
+                  </tr>
+                  <tr>
+                    <td>Mai</td>
+                    <td class="revenu-mai"></td>
+                    <td class="qte-vente-mai"></td>
+                  </tr>
+                  <tr>
+                    <td>Juin</td>
+                    <td class="revenu-juin"></td>
+                    <td class="qte-vente-juin"></td>
+                  </tr>
+                  <tr>
+                    <td>Juillet</td>
+                    <td class="revenu-juillet"></td>
+                    <td class="qte-vente-juillet"></td>
+                  </tr>
+                  <tr>
+                    <td>Aout</td>
+                    <td class="revenu-aout"></td>
+                    <td class="qte-vente-aout"></td>
+                  </tr>
+                  <tr>
+                    <td>Septembre</td>
+                    <td class="revenu-septembre"></td>
+                    <td class="qte-vente-septembre"></td>
+                  </tr>
+                  <tr>
+                    <td>Octobre</td>
+                    <td class="revenu-octobre"></td>
+                    <td class="qte-vente-octobre"></td>
+                  </tr>
+                  <tr>
+                    <td>Novembre</td>
+                    <td class="revenu-novembre"></td>
+                    <td class="qte-vente-novembre"></td>
+                  </tr>
+                  <tr>
+                    <td>Décembre</td>
+                    <td class="revenu-decembre"></td>
+                    <td class="qte-vente-decembre"></td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="modal-gestion-qte-total-ventes">
+                <table class="modal-gestion-charges-mensuel-table-trimestre">
+                  <thead>
+                    <tr>
+                      <th>Trimestre</th>
+                      <th>Total en €</th>
+                      <th>URSAFF</th>
+                      <th>Progression en %</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Trimestre 1</td>
+                      <td class="revenu-trimestre-un"></td>
+                      <td class="ursaff-trimestre-un"></td>
+                      <td class="progression-trimestre-un"></td>
+                    </tr>
+                  </tbody>
+                  <tbody>
+                    <tr>
+                      <td>Trimestre 2</td>
+                      <td class="revenu-trimestre-deux"></td>
+                      <td class="ursaff-trimestre-deux"></td>
+                      <td class="progression-trimestre-deux"></td>
+                    </tr>
+                  </tbody>
+                  <tbody>
+                    <tr>
+                      <td>Trimestre 3</td>
+                      <td class="revenu-trimestre-trois"></td>
+                      <td class="ursaff-trimestre-trois"></td>
+                      <td class="progression-trimestre-trois"></td>
+                    </tr>
+                  </tbody>
+                  <tbody>
+                    <tr>
+                      <td>Trimestre 4</td>
+                      <td class="revenu-trimestre-quatre"></td>
+                      <td class="ursaff-trimestre-quatre"></td>
+                      <td class="progression-trimestre-quatre"></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="modal-gestion-qte-total-ventes-annuel">
+                  <table class="modal-gestion-charges-mensuel-table-qte">
+                    <thead>
+                      <tr>
+                        <th>Qte total des ventes</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="qte-total-vente-annuel"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="modal-gestion-charges-mensuel-table-qte">
+                    <thead>
+                      <th>Qte total des ventes</th>
+                      <th>En €</th>
+                      <tr>
+                        <th>Revenu magasin</th>
+                        <td class="revenu-total-magasin"></td>
+                      </tr>
+                      <tr></tr>
+                      <tr>
+                        <th>Revenu internet</th>
+                        <td class="revenu-total-internet"></td>
+                      </tr>
+                      <tr>
+                        <th>Revenu BRUT</th>
+                        <td class="revenu-total-ursaff"></td>
+                      </tr>
+                      <tr>
+                        <th>Revenu NET</th>
+                        <td class="revenu-total-net"></td>
+                      </tr>
+                    </thead>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="modal-gestion-export">Exporter le fichier</button>
+      </div>
+    </div>
+    <div class="modal-content-ajout-commande" style="display: none">
+      <div class="modal-ajout-commande">
+        <h3 style="text-align: center">Ajouter une commande magasin</h3>
+        <div class="modal-ajout-commande-enfant">
+          <div style="width: 50%">
+            <h4>En stock</h4>
+
+            <label>Date: <input type="date" class="article-date" /></label>
+
+            <label
+              >Catégorie:
+              <select id="select-categorie">
+                <option value="">--Choisir une catégorie--</option>
+              </select>
+            </label>
+
+            <label
+              >Nom:
+              <select id="select-nom" disabled>
+                <option value="">--Choisir un nom--</option>
+              </select>
+            </label>
+
+            <label
+              >Référence:
+              <select id="select-reference" disabled>
+                <option value="">--Choisir une référence--</option>
+              </select>
+            </label>
+
+            <label
+              >Prix unitaire:
+              <input type="number" id="article-prix" step="0.01" disabled />
+            </label>
+
+            <label
+              >Quantité:
+              <input type="number" id="article-quantite" min="0" />
+            </label>
+
+            <button id="btn-ajouter-article">Ajouter la commande</button>
+          </div>
+          <div style="width: 50%">
+            <h4>Hors stock</h4>
+            <label>Date: <input type="date" class="article-date" /></label>
+
+            <label
+              >Catégorie:
+              <input
+                type="text"
+                id="manual-categorie"
+                placeholder="Sac à tarte"
+            /></label>
+            <label
+              >Nom: <input type="text" id="manual-nom" placeholder="Vert"
+            /></label>
+            <label
+              >Référence:
+              <input type="text" id="manual-reference" placeholder="B25689"
+            /></label>
+            <label
+              >Prix unitaire:
+              <input
+                type="number"
+                id="manual-prix"
+                step="0.01"
+                placeholder="12.99"
+            /></label>
+            <label
+              >Quantité:
+              <input type="number" id="manual-quantite" placeholder="0" min="0"
+            /></label>
+            <button id="btn-ajouter-manuel">Ajouter la commande</button>
+          </div>
+        </div>
+        <div>
+          <h4>Commandes sélectionnés</h4>
+          <ul id="liste-articles-selectionnes"></ul>
+
+          <button id="submit-commande">Valider la commande</button>
+          <button id="cancel-article">Annuler</button>
+        </div>
+      </div>
+    </div>
+    <!-- Modale export -->
+    <div class="modal-content-export" style="display: none">
+      <div class="modal-export">
+        <h3>Exporter les données</h3>
+
+        <label>Format :</label>
+        <select id="export-format">
+          <option value="pdf">PDF</option>
+          <option value="excel">Excel</option>
+        </select>
+
+        <label>Période :</label>
+        <select id="export-periode">
+          <option value="all">Toute la base</option>
+          <option value="year">Une année précise</option>
+          <option value="month">Un mois précis</option>
+        </select>
+
+        <div id="export-year-select" style="display: none">
+          <label>Année :</label>
+          <select id="export-annee">
+            <!-- Généré dynamiquement avec JS (ex: 2020 → année courante) -->
+          </select>
+        </div>
+
+        <div id="export-month-select" style="display: none">
+          <label>Mois :</label>
+          <select id="export-mois">
+            <option value="0">Janvier</option>
+            <option value="1">Février</option>
+            <option value="2">Mars</option>
+            <option value="3">Avril</option>
+            <option value="4">Mai</option>
+            <option value="5">Juin</option>
+            <option value="6">Juillet</option>
+            <option value="7">Août</option>
+            <option value="8">Septembre</option>
+            <option value="9">Octobre</option>
+            <option value="10">Novembre</option>
+            <option value="11">Décembre</option>
+          </select>
+        </div>
+
+        <div class="export-buttons">
+          <button id="submit-export">Exporter</button>
+          <button id="cancel-export">Annuler</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      fetch('/cookie-banner.html')
+        .then((response) => response.text())
+        .then((data) => {
+          const div = document.createElement('div');
+          div.innerHTML = data;
+          document.body.appendChild(div);
+
+          const banner = document.getElementById('cookie-banner');
+          const consent = localStorage.getItem('cookiesConsent');
+
+          function showBanner() {
+            banner.classList.add('show');
+          }
+          function hideBanner() {
+            banner.classList.remove('show');
+            setTimeout(() => (banner.style.display = 'none'), 600);
+          }
+
+          if (!consent) setTimeout(showBanner, 500);
+          else {
+            banner.style.display = 'none';
+            if (consent === 'accepted') enableOptionalCookies();
+          }
+
+          document
+            .getElementById('accept-cookies')
+            .addEventListener('click', () => {
+              localStorage.setItem('cookiesConsent', 'accepted');
+              hideBanner();
+              enableOptionalCookies();
+            });
+
+          document
+            .getElementById('reject-cookies')
+            .addEventListener('click', () => {
+              localStorage.setItem('cookiesConsent', 'rejected');
+              hideBanner();
+            });
+
+          function enableOptionalCookies() {
+            if (!window.gaScriptLoaded) {
+              let gaScript = document.createElement('script');
+              gaScript.src =
+                'https://www.googletagmanager.com/gtag/js?id=G-GMKB3EETR0'; // Remplace par ton ID
+              gaScript.async = true;
+              document.head.appendChild(gaScript);
+
+              window.dataLayer = window.dataLayer || [];
+              function gtag() {
+                dataLayer.push(arguments);
+              }
+              window.gtag = gtag;
+              gtag('js', new Date());
+              gtag('config', 'G-GMKB3EETR0'); // Remplace par ton ID
+              window.gaScriptLoaded = true;
+            }
+          }
+        })
+        .catch((err) =>
+          console.error('Erreur chargement bandeau cookies:', err)
+        );
+    </script>
+  </body>
+</html>

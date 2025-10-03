@@ -1,0 +1,20 @@
+[
+  {
+    "_id": "682f89d78664c05d178c796f",
+    "categorie": "votre_categorie",
+    "imageCouverture": "uploads/votre_image.webp",
+    "nom": "votre_nom",
+    "image": ["uploads/votre_image.webp"],
+    "description": "votre_description",
+    "titreDescription": "votre_titre_description",
+    "descriptionComplete": "votre_description_complete",
+    "materiaux": "votre_matériaux",
+    "prix": 6.99,
+    "reference": "votre_réference",
+    "stock": 1,
+    "createdAt": "2025-05-22T20:32:23.825Z",
+    "updatedAt": "2025-09-20T09:54:00.419Z",
+    "__v": 1,
+    "date": "2025-09-20T08:43:23.365Z"
+  }
+]

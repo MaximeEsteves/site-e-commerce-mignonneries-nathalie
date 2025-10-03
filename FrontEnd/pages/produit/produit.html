@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>%PAGE_TITLE% – Mignonneries de Nathalie</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="%PAGE_DESCRIPTION%" />
+
+    <meta property="og:type" content="product" />
+    <meta property="og:title" content="%OG_TITLE%" />
+    <meta property="og:description" content="%OG_DESCRIPTION%" />
+    <meta property="og:image" content="%OG_IMAGE_URL%" />
+    <meta property="og:url" content="%OG_URL%" />
+    <meta property="og:site_name" content="Mignonneries de Nathalie" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="%TWITTER_TITLE%" />
+    <meta name="twitter:description" content="%TWITTER_DESCRIPTION%" />
+    <meta name="twitter:image" content="%TWITTER_IMAGE_URL%" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preconnect"
+      href="https://backend-lesmidena-production.up.railway.app"
+      crossorigin
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400&family=Playfair+Display:wght@400;700&display=swap"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Geist:wght@400&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        rel="stylesheet"
+      />
+    </noscript>
+    <link rel="stylesheet" href="/global/style.css?v=1.1.1" />
+    <link rel="stylesheet" href="/pages/produit/produit.css?v=1.1.1" />
+    <script
+      type="module"
+      src="/pages/produit/produit.js?v=1.1.1"
+      defer
+    ></script>
+    <script type="module" src="/global/script.js?v=1.1.1" defer></script>
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LeV4dArAAAAAFywtVimxHZ_SZfRUGHhi54ZOMRN"></script>
+
+    <meta
+      name="google-site-verification"
+      content="3OOB2G7NuhktukpiLBtx_UMw4QccqYQqU3ue6c4jxpE"
+    />
+  </head>
+  <body id="btn-retour" aria-label="Retour à l'accueil">
+    <header>
+      <img
+        id="image-couverture-boutique"
+        src=""
+        alt="image accueil les mignonneries de nathalie"
+        fetchpriority="high"
+        decoding="async"
+      />
+      <div class="titre-header">
+        <h1 class="titre-produit-boutique"></h1>
+      </div>
+      <!-- NAVIGATION DESKTOP -->
+      <nav class="desktop">
+        <a href="/" id="logo-nav-header">
+          <img
+            src="../../assets/images/logo-nav.webp"
+            alt="logo les mignonneries de nathalie"
+        /></a>
+        <ul class="btn-nav">
+          <li><a href="../../index.html">Accueil</a></li>
+          <li><a href="../../index.html#creation">Créations</a></li>
+          <li><a href="../blog/blog.html">Blog</a></li>
+          <li><a href="../../index.html#contact">Contact</a></li>
+          <li>
+            <a
+              href="https://www.instagram.com/mignonneries.nathalie/"
+              target="_blank"
+              aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li class="favoris">
+            <a href="../../pages/favoris/favoris.html" aria-label="Favoris"
+              ><i class="fa-solid fa-heart"></i
+              ><span class="favoris-count"></span
+            ></a>
+          </li>
+          <li class="panier">
+            <a href="../../pages/panier/panier.html" aria-label="Panier"
+              ><i class="fa-solid fa-bag-shopping"></i
+              ><span class="panier-count"></span
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <!-- NAVIGATION MOBILE -->
+      <nav class="mobile">
+        <!-- Burger -->
+        <button class="burger" aria-label="Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- Logo -->
+        <a href="../../index.html" class="logo">
+          <img src="../../assets/images/logo-nav.webp" alt="logo" />
+        </a>
+
+        <!-- Barre de recherche -->
+        <div class="search">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Sac, Bavoir, Kit ..."
+          />
+          <div id="searchResults"></div>
+        </div>
+
+        <!-- Icônes à droite -->
+        <div class="icons">
+          <a
+            href="https://www.instagram.com/mignonneries.nathalie/"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="../pages/favoris/favoris.html"
+            class="favoris"
+            aria-label="Favoris"
+          >
+            <i class="fa-regular fa-heart"></i>
+            <span class="favoris-count"></span>
+          </a>
+          <a
+            href="../pages/panier/panier.html"
+            class="panier"
+            aria-label="Panier"
+          >
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="panier-count"></span>
+          </a>
+        </div>
+
+        <!-- Menu déroulant caché -->
+        <div class="mobile-menu">
+          <div class="mobile-menu-overlay"></div>
+          <div class="close-menu-container">
+            <button class="close-menu" aria-label="Fermer">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <img src="../../assets/images/logo-nav.webp" alt="logo" />
+          </div>
+          <div class="icons">
+            <a
+              href="https://www.instagram.com/mignonneries.nathalie/"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="./pages/favoris/favoris.html"
+              class="favoris"
+              aria-label="Favoris"
+            >
+              <i class="fa-regular fa-heart"></i>
+              <span class="favoris-count"></span>
+            </a>
+            <a
+              href="./pages/panier/panier.html"
+              class="panier"
+              aria-label="Panier"
+            >
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span class="panier-count"></span>
+            </a>
+          </div>
+          <ul>
+            <li><a href="../../index.html">Accueil</a></li>
+            <li><a href="../../index.html#creation">Créations</a></li>
+            <li><a href="../blog/blog.html">Blog</a></li>
+            <li><a href="../bio/bio.html">Contact</a></li>
+          </ul>
+          <p>© 2024 - 2025 Mignonneries-Nathalie</p>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="produit-wrapper">
+        <div class="image-section">
+          <div class="image-wrapper">
+            <button id="next-btn" class="nav-btn" aria-label="Image suivante">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            <img id="image-principale" src="" alt="" />
+            <button id="prev-btn" class="nav-btn" aria-label="Image précédente">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+          </div>
+          <div class="thumbs" id="thumbs-container">
+            <!-- Miniatures ici -->
+          </div>
+        </div>
+        <div class="details-section">
+          <div class="titre-btn-partager">
+            <h2 class="titre-produit"></h2>
+            <button id="btn-partager" class="btn-partager">
+              <i class="fa-solid fa-share-nodes"></i>Partager
+            </button>
+          </div>
+          <p class="price" id="prix-produit"></p>
+          <div id="titre-produit-similaire"></div>
+          <div class="select-wrapper"><label for="options"></label><br /></div>
+          <select
+            name="stock"
+            id="stock-produit"
+            aria-label="Sélectionner le stock"
+          ></select>
+          <button
+            class="btn-ajout-panier"
+            aria-label="Ajouter au panier"
+            data-id=""
+            data-stock=""
+          ></button>
+          <button class="btn-fav-article" aria-label="Ajouter aux favoris">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+
+          <p class="reference" id="ref-produit"></p>
+
+          <h3 class="caracteristiques">Caractéristiques du kit :</h3>
+          <p id="titre-produit-description"></p>
+          <p id="desc-produit"></p>
+          <p id="materiaux">
+            <strong>Matériaux : </strong><span id="materiaux-produit"></span>
+          </p>
+        </div>
+      </div>
+      <section class="autres-produits-similaires">
+        <div id="titre-produit-similaire-autres"></div>
+      </section>
+      <section class="section-information">
+        <div class="div-information">
+          <article>
+            <div class="produit-similaire">
+              <img src="/assets/icons/icon_aiguille.svg" alt="" />
+              <h4>Création artisanale</h4>
+              <p>
+                Toutes nos créations sont réalisées à la main avec passion dans
+                notre atelier dans le Tarn (81).
+              </p>
+            </div>
+          </article>
+          <article>
+            <div class="produit-similaire">
+              <img src="/assets/icons/icon_cartes.svg" alt="" />
+              <h4>Écoresponsable</h4>
+              <p>
+                Nos produits sont réutilisables et fabriqués, pour la plupart,
+                avec des matériaux de seconde main.
+              </p>
+            </div>
+          </article>
+          <article>
+            <div class="produit-similaire">
+              <img src="/assets/icons/icon_boite.svg" alt="" />
+              <h4>Livraison rapide</h4>
+              <p>
+                Nos produits sont emballés par nos soins et envoyés dans les
+                plus brefs délais.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="avis-produit" class="avis-section">
+        <h3>Laissez un avis</h3>
+        <form id="form-avis">
+          <div class="form-group">
+            <label for="avis-nom">Nom</label>
+            <input type="text" id="avis-nom" name="nom" required />
+          </div>
+          <div class="form-group">
+            <label for="avis-note">Note</label>
+            <select id="avis-note" name="note" required>
+              <option value="">-- Choisissez --</option>
+              <option value="5">★★★★★</option>
+              <option value="4">★★★★☆</option>
+              <option value="3">★★★☆☆</option>
+              <option value="2">★★☆☆☆</option>
+              <option value="1">★☆☆☆☆</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="avis-commentaire">Commentaire</label>
+            <textarea
+              id="avis-commentaire"
+              name="commentaire"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <button type="submit">Envoyer mon avis</button>
+          <p id="avis-message" class="avis-message"></p>
+        </form>
+
+        <div id="liste-avis">
+          <!-- Les avis postés s’afficheront ici -->
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="div-footer">
+        <h3 class="titre-footer">À propos</h3>
+        <ul class="lien-footer">
+          <li><a href="./cgv.html#mentions-legales">Mentions légales</a></li>
+          <li><a href="./cgv.html">Conditions générales </a></li>
+          <li><a href="./bio.html">À propos</a></li>
+        </ul>
+      </div>
+      <div class="div-footer">
+        <p>© 2024 - 2025 Mignonneries-Nathalie</p>
+        <ul class="lien-footer-reseaux">
+          <li>
+            <a
+              href="https://www.instagram.com/mignonneries.nathalie/"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.tiktok.com/@les_mignonneries_de_nath"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/mignonneries-de-nathalie-499884334/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UCEfuaMURKRQH5zqfeSbv1RQ"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://fr.pinterest.com/lesmidena/"
+              ><i class="fa-brands fa-pinterest"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="div-footer">
+        <h3 class="titre-footer">Assistance</h3>
+        <ul class="lien-footer">
+          <li><a href="../pages/bio/bio.html">Nous contacter</a></li>
+          <li>
+            <a href="https://g.page/r/CRnYaYW2yYMWEBM/review" target="_blank"
+              >Avis google</a
+            >
+          </li>
+          <li><a href="./tissus.html">Les tissus</a></li>
+        </ul>
+      </div>
+    </footer>
+    <!-- Modale d'agrandissement de la photo -->
+    <div id="fullscreen-modal">
+      <div class="fullscreen-overlay">
+        <button id="close-fullscreen" class="close-btn">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <button id="fullscreen-next" class="nav-btn">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <div class="contenair-image-modal">
+          <img id="fullscreen-image" src="" alt="" />
+        </div>
+        <button id="fullscreen-prev" class="nav-btn">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+      </div>
+    </div>
+    <script>
+      fetch('/cookie-banner.html')
+        .then((response) => response.text())
+        .then((data) => {
+          const div = document.createElement('div');
+          div.innerHTML = data;
+          document.body.appendChild(div);
+
+          const banner = document.getElementById('cookie-banner');
+          const consent = localStorage.getItem('cookiesConsent');
+
+          function showBanner() {
+            banner.classList.add('show');
+          }
+          function hideBanner() {
+            banner.classList.remove('show');
+            setTimeout(() => (banner.style.display = 'none'), 600);
+          }
+
+          if (!consent) setTimeout(showBanner, 500);
+          else {
+            banner.style.display = 'none';
+            if (consent === 'accepted') enableOptionalCookies();
+          }
+
+          document
+            .getElementById('accept-cookies')
+            .addEventListener('click', () => {
+              localStorage.setItem('cookiesConsent', 'accepted');
+              hideBanner();
+              enableOptionalCookies();
+            });
+
+          document
+            .getElementById('reject-cookies')
+            .addEventListener('click', () => {
+              localStorage.setItem('cookiesConsent', 'rejected');
+              hideBanner();
+            });
+
+          function enableOptionalCookies() {
+            if (!window.gaScriptLoaded) {
+              let gaScript = document.createElement('script');
+              gaScript.src =
+                'https://www.googletagmanager.com/gtag/js?id=G-GMKB3EETR0'; // Remplace par ton ID
+              gaScript.async = true;
+              document.head.appendChild(gaScript);
+
+              window.dataLayer = window.dataLayer || [];
+              function gtag() {
+                dataLayer.push(arguments);
+              }
+              window.gtag = gtag;
+              gtag('js', new Date());
+              gtag('config', 'G-GMKB3EETR0'); // Remplace par ton ID
+              window.gaScriptLoaded = true;
+            }
+          }
+        })
+        .catch((err) =>
+          console.error('Erreur chargement bandeau cookies:', err)
+        );
+    </script>
+  </body>
+
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</html>

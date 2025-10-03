@@ -1,0 +1,163 @@
+header {
+  height: 350px;
+}
+
+.titre-header {
+  position: absolute;
+  top: 45%;
+  left: 67%;
+  text-align: center;
+}
+
+.titre-header h1 {
+  font-size: 4rem;
+}
+
+/* main section a prospos */
+.bio-section {
+  padding: 100px;
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+.bio-text {
+  width: 100%;
+}
+.bio-text h2 {
+  color: #3a5151;
+  font-size: 32px;
+}
+.bio-text p {
+  color: #3a5151;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.bio-img {
+  height: auto;
+}
+.bio-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+.bio-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bio-contact div {
+  text-align: center;
+  font-size: 28px;
+  color: #3a5151;
+}
+.bio-contact div p {
+  text-align: center;
+  font-size: 18px;
+  color: #3a5151;
+  font-weight: 500;
+}
+.bio-contact a {
+  margin: 0 5px;
+  border-radius: 8px;
+  padding: 5px;
+  transition: 0.3s;
+}
+.bio-contact a:hover {
+  transition: 0.3s;
+  color: black;
+}
+
+@media (max-width: 1440px) {
+  main section:nth-child(1) {
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px auto;
+    gap: 20px;
+  }
+  main section:nth-child(1) .bio-text h2 br {
+    display: none;
+  }
+}
+@media (max-width: 1240px) {
+  main section:nth-child(2) {
+    flex-direction: column-reverse;
+    padding: 20px;
+    margin: 80px auto;
+    margin-bottom: 180px;
+    gap: 20px;
+  }
+  main section:nth-child(2) .bio-contact {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 50px;
+    margin: 80px auto;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .titre-header h1 {
+    font-size: 28px;
+  }
+  .bio-text h2 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 550px) {
+  .titre-header h1 {
+    font-size: 22px;
+  }
+  .titre-header {
+    position: absolute;
+    top: 55%;
+    left: 60% !important;
+  }
+  main section:nth-child(2) {
+    margin-bottom: 250px;
+  }
+  main section:nth-child(2) .bio-contact {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 20px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+@media (max-width: 425px) {
+  .titre-header h1 {
+    font-size: 18px;
+  }
+  .titre-header {
+    position: absolute;
+    top: 55%;
+    left: 60% !important;
+  }
+  .bio-text h2 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 320px) {
+  .bio-text h2 {
+    font-size: 18px;
+  }
+}

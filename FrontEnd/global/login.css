@@ -1,0 +1,12 @@
+body{
+    color: #3a5151;
+}
+header{
+    height: 20%;
+}
+.text-error-connexion{
+    color: red;
+}
+#user-open{
+    font-weight: 700;
+}

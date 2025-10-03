@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page non trouvée - 404</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <!-- Fonts & Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/global/style.css?v=1.1.2" />
+    <script type="module" src="/global/script.js?v=1.1.2" defer></script>
+    <style>
+      header {
+        height: 300px;
+      }
+
+      main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+        margin: 120px auto;
+      }
+
+      main img {
+        width: 100px;
+        margin-bottom: 1rem;
+      }
+
+      h1 {
+        font-size: 6rem;
+        margin: 0;
+        color: #3a5151;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        margin: 0.5rem 0 1.5rem;
+        color: #3a5151;
+      }
+
+      a.btn-home {
+        display: inline-block;
+        padding: 12px 20px;
+        background: #3a5151;
+        color: white;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+      }
+
+      a.btn-home:hover {
+        background: #2b3c3c;
+        transform: translateY(-2px);
+      }
+      .search {
+        display: none;
+      }
+    </style>
+    <meta
+      name="google-site-verification"
+      content="3OOB2G7NuhktukpiLBtx_UMw4QccqYQqU3ue6c4jxpE"
+    />
+  </head>
+  <body>
+    <header>
+      <img
+        src="./assets/images/image-accueil.webp"
+        alt="image accueil les mignonneries de nathalie"
+      />
+      <!-- NAVIGATION DESKTOP -->
+      <nav class="desktop">
+        <a href="/" id="logo-nav-header">
+          <img
+            src="./assets/images/logo-nav.webp"
+            alt="logo les mignonneries de nathalie"
+          />
+        </a>
+        <ul class="btn-nav">
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/#creation">Créations</a></li>
+          <li><a href="./pages/blog/blog.html">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a
+              href="https://www.instagram.com/mignonneries.nathalie/"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li class="favoris">
+            <a href="./pages/favoris/favoris.html" aria-label="Favoris">
+              <i class="fa-regular fa-heart"></i>
+              <span class="favoris-count"></span>
+            </a>
+          </li>
+          <li class="panier">
+            <a href="./pages/panier/panier.html" aria-label="Panier">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span class="panier-count"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- NAVIGATION MOBILE -->
+      <nav class="mobile">
+        <!-- Burger -->
+        <button class="burger" aria-label="Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- Logo -->
+        <a href="/" class="logo">
+          <img src="./assets/images/logo-nav.webp" alt="logo" />
+        </a>
+
+        <!-- Barre de recherche -->
+        <div class="search">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Sac, Bavoir, Kit ..."
+          />
+          <div id="searchResults"></div>
+        </div>
+
+        <!-- Icônes à droite -->
+        <div class="icons">
+          <a
+            href="https://www.instagram.com/mignonneries.nathalie/"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="./pages/favoris/favoris.html"
+            class="favoris"
+            aria-label="Favoris"
+          >
+            <i class="fa-regular fa-heart"></i>
+            <span class="favoris-count"></span>
+          </a>
+          <a
+            href="./pages/panier/panier.html"
+            class="panier"
+            aria-label="Panier"
+          >
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="panier-count"></span>
+          </a>
+        </div>
+
+        <!-- Menu déroulant caché -->
+        <div class="mobile-menu">
+          <div class="mobile-menu-overlay"></div>
+          <div class="close-menu-container">
+            <button class="close-menu" aria-label="Fermer">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <img src="./assets/images/logo-nav.webp" alt="logo" />
+          </div>
+          <div class="icons">
+            <a
+              href="https://www.instagram.com/mignonneries.nathalie/"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="./pages/favoris/favoris.html"
+              class="favoris"
+              aria-label="Favoris"
+            >
+              <i class="fa-regular fa-heart"></i>
+              <span class="favoris-count"></span>
+            </a>
+            <a
+              href="./pages/panier/panier.html"
+              class="panier"
+              aria-label="Panier"
+            >
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span class="panier-count"></span>
+            </a>
+          </div>
+          <ul>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="./pages/blog/blog.html">Blog</a></li>
+            <li><a href="./pages/bio/bio.html">Contact</a></li>
+          </ul>
+          <p>© 2024 - 2025 Mignonneries-Nathalie</p>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <img src="/assets/icons/logo.webp" alt="logo Mignonneries-Nathalie" />
+      <h1>404</h1>
+      <h2>Oups ! La page que vous recherchez n’existe pas.</h2>
+      <a href="/" class="btn-home">Retour à l’accueil</a>
+    </main>
+    <script>
+      fetch('/cookie-banner.html')
+        .then((response) => response.text())
+        .then((data) => {
+          const div = document.createElement('div');
+          div.innerHTML = data;
+          document.body.appendChild(div);
+
+          const banner = document.getElementById('cookie-banner');
+          const consent = localStorage.getItem('cookiesConsent');
+
+          function showBanner() {
+            banner.classList.add('show');
+          }
+          function hideBanner() {
+            banner.classList.remove('show');
+            setTimeout(() => (banner.style.display = 'none'), 600);
+          }
+
+          if (!consent) setTimeout(showBanner, 500);
+          else {
+            banner.style.display = 'none';
+            if (consent === 'accepted') enableOptionalCookies();
+          }
+
+          document
+            .getElementById('accept-cookies')
+            .addEventListener('click', () => {
+              localStorage.setItem('cookiesConsent', 'accepted');
+              hideBanner();
+              enableOptionalCookies();
+            });
+
+          document
+            .getElementById('reject-cookies')
+            .addEventListener('click', () => {
+              localStorage.setItem('cookiesConsent', 'rejected');
+              hideBanner();
+            });
+
+          function enableOptionalCookies() {
+            if (!window.gaScriptLoaded) {
+              let gaScript = document.createElement('script');
+              gaScript.src =
+                'https://www.googletagmanager.com/gtag/js?id=G-GMKB3EETR0'; // Remplace par ton ID
+              gaScript.async = true;
+              document.head.appendChild(gaScript);
+
+              window.dataLayer = window.dataLayer || [];
+              function gtag() {
+                dataLayer.push(arguments);
+              }
+              window.gtag = gtag;
+              gtag('js', new Date());
+              gtag('config', 'G-GMKB3EETR0'); // Remplace par ton ID
+              window.gaScriptLoaded = true;
+            }
+          }
+        })
+        .catch((err) =>
+          console.error('Erreur chargement bandeau cookies:', err)
+        );
+    </script>
+  </body>
+</html>

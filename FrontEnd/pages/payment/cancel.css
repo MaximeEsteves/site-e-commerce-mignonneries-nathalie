@@ -1,0 +1,88 @@
+header {
+  height: 350px;
+}
+
+.erreur {
+  text-align: center;
+  padding: 2rem;
+  background-color: #fce4da;
+  color: #3a5151;
+}
+
+.erreur h1 {
+  color: #3a5151;
+  font-size: 2.5rem;
+}
+.erreur p {
+  font-size: 1rem;
+}
+
+.erreur ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+.erreur li {
+  font-size: 1.1rem;
+  font-family: 'Geist';
+  margin: 10px auto;
+}
+
+#mail:hover {
+  filter: brightness(0.7);
+}
+.btn-retour {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #3a5151;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  border: 1px solid #fce4da;
+  font-family: 'Geist';
+  margin-bottom: 50px;
+}
+
+.btn-retour:hover {
+  background-color: #fce4da;
+  border: 1px solid #3a5151;
+  color: #3a5151;
+}
+
+@media (max-width: 1024px) {
+  .titre-header h1 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 768px) {
+  .titre-header h1 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 550px) {
+  .titre-header h1 {
+    font-size: 22px;
+  }
+  .titre-header {
+    position: absolute;
+    top: 55%;
+    left: 60% !important;
+  }
+}
+@media (max-width: 425px) {
+  .titre-header h1 {
+    font-size: 18px;
+  }
+  .titre-header {
+    position: absolute;
+    top: 55%;
+    left: 60% !important;
+  }
+}
+@media (max-width: 320px) {
+}

@@ -1,0 +1,34 @@
+header {
+  height: 210px;
+  background-color: #3a5151;
+}
+header nav {
+  position: static;
+}
+
+.cgv-intro h1 {
+  background-color: #fce4da;
+  color: #3a5151;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 80px 0px;
+  font-size: 26px;
+}
+
+.cgv-intro ul {
+  color: #3a5151;
+  width: 80%;
+  margin: 30px auto;
+}
+.cgv-intro li {
+  line-height: 28px;
+  margin: 20px auto;
+}
+
+.titre-regle {
+  font-size: 18px;
+  font-weight: 600;
+}

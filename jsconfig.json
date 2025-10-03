@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "baseUrl": "./backend",         // ou "./" si tu lances VS Code à la racine site web/
+    "paths": {
+      "*": ["*", "routes/*", "controllers/*", "models/*", "middleware/*"]
+    }
+  },
+  "include": ["backend/**/*"]
+}
